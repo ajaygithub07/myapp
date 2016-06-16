@@ -1,0 +1,12 @@
+version: '2'
+services:
+    banking-postgresql:
+        container_name: banking-postgresql
+        image: postgres:9.5.2
+        # volumes:
+        #     - ~/volumes/jhipster/banking/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=banking
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
